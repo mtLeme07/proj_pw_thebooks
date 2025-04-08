@@ -1,0 +1,12 @@
+root{
+    --main: #fc6;
+}
+
+#mainNavbar{
+    background-color: var(--main);
+    color: #fff;
+}
+
+h1{
+    align-self: center;    
+}
