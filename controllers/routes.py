@@ -8,7 +8,7 @@ def init_app(app):
         return render_template('home.html')
 
     # Rota de games
-    @app.route('/games')
+    @app.route('/lista')
     def lista():
         return render_template('lista.html')
     

@@ -1,3 +1,31 @@
 .navbar{
-    background-color: #fa3;
+    background-color: #da3;
+    align-items:end
+}
+.navbar-nav .nav-link{
+    color: #ddd;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    align-self: center;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #fc5; 
+    color: #fff; 
+    border-radius: 5px; 
+    transition: all 0.2s ease; 
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+
+  }
+
+#navLogo{
+    font-size: 125%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+#navLogo:hover{
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+footer{
+    background-color: #bf8f2f;
+
 }
