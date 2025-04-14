@@ -1,20 +1,19 @@
-
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <h4> Catálogo de Livros </h4>
 
 {% for livro in listaLivros %}
-Titulo: <strong>{{livro.Titulo}}</strong> <br>
-Publicação: <strong>{{livro.Publicação}}</strong> <br>
-Autor: <strong>{{livro.Autor}}</strong> <br>
-Gênero: <strong>{{livro.Genero}}</strong> <br> <br>
-Editora: <strong>{{livro.Editora}}</strong>
-Idioma: <strong>{{livro.Idioma}}</strong> <br>
-Classificação: <strong>{{livro.Classificacao}}</strong> <br>
-Observação: <strong>{{livro.Observacao}}</strong> <br>
-{%endfor%}
-
-
+    <div class="mostrarLivro">
+        Titulo: <strong>{{ livro.Titulo }}</strong> <br>
+        Publicação: <strong>{{ livro.Publicacao }}</strong> <br>
+        Autor: <strong>{{ livro.Autor }}</strong> <br>
+        Gênero: <strong>{{ livro.Genero }}</strong> <br>
+        Editora: <strong>{{ livro.Editora }}</strong> <br>
+        Idioma: <strong>{{ livro.Idioma }}</strong> <br>
+        Classificação: <strong>{{ livro.Classificacao }}</strong> <br>
+        Observação: <strong>{{ livro.Observacao }}</strong> <br>
+        <hr>
+    </div>
+{% endfor %}
 
 {% endblock content %}
