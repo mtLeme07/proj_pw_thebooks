@@ -17,7 +17,7 @@
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
 
   }
-
+/* Faz o botão mudar com o mouse em cima */
 #navLogo{
     font-size: 125%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -28,4 +28,24 @@
 footer{
     background-color: #bf8f2f;
 
+}
+/* Coisas do base.html acima */
+#banner{
+    width: 100%;
+    height: 300px;
+    background-image: url("../imgs/banner.png");
+}
+#bannerText{
+    padding: 50px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: #fff;
+    font-size: 300%;
+    padding-top: 80px;
+    padding-left: 80px;
+}
+.highlight-w{
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+.highlight-b{
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
