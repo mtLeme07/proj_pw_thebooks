@@ -8,22 +8,22 @@
   <form action="{{url_for('lista')}}" method="POST">
     <div>
       <label>Título</label>
-      <input type="text" placeholder="Digite o título do livro" />
+      <input type="text" name="titulo" placeholder="Digite o título do livro" required/>
     </div>
 
     <div>
       <label>Data de Publicação</label>
-      <input type="date" />
+      <input type="date" name="data" required/>
     </div>
 
     <div>
       <label>Autor</label>
-      <input type="text" placeholder="Digite o nome do autor" />
+      <input type="text" name="autor" placeholder="Digite o nome do autor" required/>
     </div>
 
     <div>
       <label>Gênero</label>
-      <select>
+      <select name="genero" required>
         <option disabled selected>Selecione o gênero</option>
         <option>Ficção</option>
         <option>Não-ficção</option>
@@ -36,17 +36,12 @@
 
     <div>
       <label>Editora</label>
-      <input type="text" placeholder="Digite o nome da editora" />
-    </div>
-
-    <div>
-      <label>Ano de Publicação</label>
-      <input type="number" placeholder="Digite o ano de publicação" />
+      <input type="text" name="editora" placeholder="Digite o nome da editora" required/>
     </div>
 
     <div>
       <label>Idioma</label>
-      <select>
+      <select name="idioma" required>
         <option disabled selected>Selecione o idioma</option>
         <option>Português</option>
         <option>Inglês</option>
@@ -64,7 +59,7 @@
 
     <div>
       <label>Classificação</label>
-      <select>
+      <select name="classificacao" required>
         <option disabled selected>Selecione a classificação</option>
         <option>Livre</option>
         <option>10</option>
@@ -76,7 +71,7 @@
 
     <div>
       <label>Observação</label>
-      <textarea placeholder="Observações adicionais"></textarea>
+      <textarea name="observacao" placeholder="Observações adicionais" required></textarea>
     </div>
 
     <div>
