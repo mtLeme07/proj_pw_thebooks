@@ -55,3 +55,22 @@ footer{
 .btn-primary:hover{
     background-color: #fc5;
 } */
+
+
+#containerLista{
+    max-width: 1200px; margin: 2 auto;
+}
+#titulo{
+    font-size: 300%;
+    text-shadow: -2px -2px 0 #ffffff, 2px -2px 0 #fc5, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+#tituloCard{
+    text-align: center;
+}
+#textoCard{
+    text-align: justify;
+    font-weight:600
+}
