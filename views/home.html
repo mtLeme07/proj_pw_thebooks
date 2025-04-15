@@ -2,25 +2,23 @@
 <section id="banner">
 <h3 id="bannerText"><b>The Books: Descubra e Compartilhe Livros!</b></h3>
 </section>
-<div class="row g-5 my-5 mx-auto">
-    <div class="col"></div>
+<div class="row my-5 mx-auto">
 
-    <div class="card col md-4 bg-secondary">
+    <div class=" col card mx-5 my-5">
+        <h5 class="card-header">Lista de Recomendações</h5>
         <div class="card-body">
-          <h3 class="card-title my-2 highlight-b text-white" style="height: 120px;"><b>Veja nossa lista!</b></h3>
-          <a href="{{url_for('lista')}}" class="btn btn-primary">Ir para Lista</a>
+          <h5 class="card-title">Va para nossa lista de recomendações de livros!</h5>
+          <a href="{{url_for('lista')}}" class="btn btn-primary">Ir!</a>
         </div>
-    </div>
+      </div>
 
-    <div class="col"></div>
 
-    <div class="card col md-4 bg-secondary">
+    <div class=" col card mx-5 my-5">
+        <h5 class="card-header">Cadastro</h5>
         <div class="card-body">
-          <h3 class="card-title my-2 highlight-b text-white" style="height: 120px;"><b>Cadastre suas sugestões!</b></h3>
-          <a href="{{url_for('cadastroLivro')}}" class="btn btn-primary">Ir para Cadastro</a>
+          <h5 class="card-title">Va para a pagina de cadastro, para registrar suas recomendações!.</h5>
+          <a href="{{url_for('cadastroLivro')}}" class="btn btn-primary">Ir!</a>
         </div>
-    </div>
-
-    <div class="col"></div>
+      </div>
 </div>
 {% endblock content %} 
