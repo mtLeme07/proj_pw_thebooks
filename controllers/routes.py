@@ -9,7 +9,7 @@ listaLivros = [{
             'Editora': 'Agir',
             'Idioma': 'Português Brasileiro',
             'Classificacao': 'Livre',
-            'Observacao': 'SimEmbora seja frequentemente catalogado como literatura infantil, O Pequeno Príncipe transcende faixas etárias, oferecendo reflexões profundas sobre temas como amizade, amor, solidão e o sentido da vida. A obra é conhecida por suas metáforas e simbolismos, que permitem múltiplas interpretações e a tornam relevante em diferentes fases da vida. Desde sua publicação, o livro tem encantado leitores ao redor do mundo, sendo traduzido para mais de 160 idiomas e dialetos.',
+            'Observacao': 'O Pequeno Príncipe transcende faixas etárias, oferecendo reflexões profundas sobre temas como amizade, amor, solidão e o sentido da vida.',
         },
                ]
 
