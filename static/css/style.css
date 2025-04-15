@@ -68,3 +68,20 @@ footer{
     text-align: justify;
     font-weight:600
 }
+
+form input,
+form select,
+form textarea {
+  box-shadow: none;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form label {
+  font-weight: bold;
+  color: #444;
+}
+
+form textarea {
+  resize: vertical;
+}

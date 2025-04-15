@@ -1,29 +1,30 @@
-{% extends 'base.html' %} {% block content %}
-<body>
-  <h2>Cadastro de Livros</h2>
+{% extends 'base.html' %}
 
-  <hr />
+{% block content %}
+<div class="container my-5">
+  <h2 class="text-center mb-4">Cadastro de Livros</h2>
+  <hr class="mb-4" />
 
-  <!--Colocar a url do site lista-->
-  <form action="{{url_for('lista')}}" method="POST">
-    <div>
-      <label>Título</label>
-      <input type="text" name="titulo" placeholder="Digite o título do livro" required/>
+  <form action="{{ url_for('lista') }}" method="POST" class="row g-3">
+
+    <div class="col-md-6">
+      <label for="titulo" class="form-label">Título</label>
+      <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Digite o título do livro" required>
     </div>
 
-    <div>
-      <label>Data de Publicação</label>
-      <input type="date" name="data" required/>
+    <div class="col-md-6">
+      <label for="data" class="form-label">Data de Publicação</label>
+      <input type="date" class="form-control" name="data" id="data" required>
     </div>
 
-    <div>
-      <label>Autor</label>
-      <input type="text" name="autor" placeholder="Digite o nome do autor" required/>
+    <div class="col-md-6">
+      <label for="autor" class="form-label">Autor</label>
+      <input type="text" class="form-control" name="autor" id="autor" placeholder="Digite o nome do autor" required>
     </div>
 
-    <div>
-      <label>Gênero</label>
-      <select name="genero" required>
+    <div class="col-md-6">
+      <label for="genero" class="form-label">Gênero</label>
+      <select class="form-select" name="genero" id="genero" required>
         <option disabled selected>Selecione o gênero</option>
         <option>Ficção</option>
         <option>Não-ficção</option>
@@ -34,14 +35,14 @@
       </select>
     </div>
 
-    <div>
-      <label>Editora</label>
-      <input type="text" name="editora" placeholder="Digite o nome da editora" required/>
+    <div class="col-md-6">
+      <label for="editora" class="form-label">Editora</label>
+      <input type="text" class="form-control" name="editora" id="editora" placeholder="Digite o nome da editora" required>
     </div>
 
-    <div>
-      <label>Idioma</label>
-      <select name="idioma" required>
+    <div class="col-md-6">
+      <label for="idioma" class="form-label">Idioma</label>
+      <select class="form-select" name="idioma" id="idioma" required>
         <option disabled selected>Selecione o idioma</option>
         <option>Português</option>
         <option>Inglês</option>
@@ -57,9 +58,9 @@
       </select>
     </div>
 
-    <div>
-      <label>Classificação</label>
-      <select name="classificacao" required>
+    <div class="col-md-6">
+      <label for="classificacao" class="form-label">Classificação</label>
+      <select class="form-select" name="classificacao" id="classificacao" required>
         <option disabled selected>Selecione a classificação</option>
         <option>Livre</option>
         <option>10</option>
@@ -69,14 +70,15 @@
       </select>
     </div>
 
-    <div>
-      <label>Observação</label>
-      <textarea name="observacao" placeholder="Observações adicionais" required></textarea>
+    <div class="col-12">
+      <label for="observacao" class="form-label">Observação</label>
+      <textarea class="form-control" name="observacao" id="observacao" rows="3" placeholder="Observações adicionais" required></textarea>
     </div>
 
-    <div>
-      <button type="submit">Cadastrar</button>
+    <div class="col-12 text-center mt-4">
+      <button type="submit" class="btn btn-warning px-5">Cadastrar</button>
     </div>
+
   </form>
-</body>
+</div>
 {% endblock content %}
