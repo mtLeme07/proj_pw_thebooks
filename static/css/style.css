@@ -49,12 +49,13 @@ footer{
 .highlight-b{
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-/* .btn-primary{
+ .btn-primary{
     background-color: #da3;
+    border-width: 0;
 }
 .btn-primary:hover{
     background-color: #fc5;
-} */
+} 
 
 
 #containerLista{
